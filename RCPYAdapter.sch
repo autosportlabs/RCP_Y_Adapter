@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -2323,8 +2323,8 @@
 <instance part="P+3" gate="1" x="-43.18" y="58.42" smashed="yes">
 <attribute name="VALUE" x="-45.72" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AD2" gate="G$1" x="-20.32" y="50.546" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-21.082" y="49.276" size="1.778" layer="96" rot="R270"/>
+<instance part="AD2" gate="G$1" x="-17.78" y="50.546" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-18.542" y="49.276" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="X2" gate="G$1" x="30.48" y="76.2"/>
 <instance part="GND2" gate="1" x="48.26" y="45.72"/>
@@ -2400,33 +2400,33 @@
 </net>
 <net name="TXD0_JACK" class="0">
 <segment>
-<wire x1="-20.32" y1="58.42" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
-<label x="-21.336" y="49.53" size="1.778" layer="95" rot="R270"/>
-<pinref part="X3" gate="G$1" pin="P4"/>
-</segment>
-<segment>
-<wire x1="30.48" y1="58.42" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
-<label x="29.464" y="49.53" size="1.778" layer="95" rot="R270"/>
-<pinref part="X2" gate="G$1" pin="P4"/>
-</segment>
-<segment>
 <wire x1="25.4" y1="-25.4" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-25.4" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
 <label x="26.67" y="-26.416" size="1.778" layer="95"/>
 <pinref part="X1" gate="G$1" pin="P3"/>
 </segment>
-</net>
-<net name="RXD0_JACK" class="0">
+<segment>
+<pinref part="X3" gate="G$1" pin="P3"/>
+<wire x1="-17.78" y1="58.42" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
+<label x="-18.796" y="50.292" size="1.778" layer="95" rot="R270"/>
+</segment>
 <segment>
 <wire x1="33.02" y1="58.42" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 <label x="32.004" y="49.53" size="1.778" layer="95" rot="R270"/>
 <pinref part="X2" gate="G$1" pin="P3"/>
 </segment>
+</net>
+<net name="RXD0_JACK" class="0">
 <segment>
 <wire x1="25.4" y1="-30.48" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-30.48" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
 <label x="26.416" y="-31.496" size="1.778" layer="95"/>
 <pinref part="X1" gate="G$1" pin="P4"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="58.42" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="29.464" y="49.53" size="1.778" layer="95" rot="R270"/>
+<pinref part="X2" gate="G$1" pin="P4"/>
 </segment>
 </net>
 </nets>
